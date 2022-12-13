@@ -1,0 +1,274 @@
+body{
+    background-color: #003763;
+    font-family: 'Comfortaa';
+}
+
+
+.img-login{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 0;
+}
+
+.title-page{
+    color: #FFFDFD;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.actions{
+    padding: 51px 0;
+}
+
+.btn-login{
+    background: #FFBF3D;
+    mix-blend-mode: normal;
+    border-radius: 16px;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+    height: 40px;
+    color: #000;
+}
+
+.btn-link-page-login{
+    padding: 6px 0;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    line-height: 13px;
+    color: #F7F4F4;
+}
+
+.title-signup{
+    padding: 12px 0;
+}
+
+/** Start Forms **/
+
+    input{
+        border: none!important;
+        border-radius: 16px!important;
+        height: 40px!important;
+    }
+
+    input::placeholder {
+        color: #D2D2D2!important;
+        opacity: 1; /* Firefox */
+        font-size: 14px;
+    }
+
+    label{
+        color: #FDFDFD;
+        font-size:12px;
+        font-weight: 400;
+    }
+    
+    .form-signup button{
+        margin: 36px 0;
+    }
+
+/** End Forms **/
+
+/** Start Top Bar **/
+
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    .btn-ico{
+        width: 25px;
+        height: 25px;
+        background-color: #FFD344;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+    
+    .btn-ico img {
+        margin: 0 auto;
+    }
+
+    .infos-dashboard {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .value-total, .sub-title{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+/** End Top Bar **/
+
+
+/** Start Navbar **/
+
+.nav-pills{
+    background-color: #D9D9D9;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+}
+
+
+section.content {
+    margin-top: 15px;
+}
+
+.nav-pills li button.nav-link{
+    font-size: 10px;
+    background: #FFD344;
+    border-radius: 16px;
+    height: 33px;
+    border: none;
+    width: 135px;
+    color: #001F3B;
+}
+
+button.active{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFD344!important;
+    color: #001f3b !important;
+    font-weight: 700;
+}
+
+#pills-tabContent{
+    background-color: #fff;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.gasto {
+    display: flex;
+    padding: 15px 0;
+    justify-content: flex-start;
+    padding-left: 8px;
+}
+.dados-gasto {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.tipo {
+    width: 40px;
+    height: 40px;
+    background: #D9D9D9;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+span.info-gasto {
+    display: block;
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #D9D9D9;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 25%);
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu ul li img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.menu ul li a{
+   font-size: 12px;
+   text-decoration: none;
+   color: #003763;
+   font-weight: 700;
+}
+
+
+.menu ul li a.active img{
+   filter: invert(100%) sepia(95%) saturate(0%) hue-rotate(47deg) brightness(101%) contrast(101%)
+ }
+/** End Navbar **/
+
+@media screen and (max-width:768px) {    
+ 
+    .title-page h1{
+        font-size: 18px;
+        max-width: 241px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-login,.btn-link-page-login{
+        font-size: 12px;
+    }
+
+    .value-total h1{
+        font-size: 26px;
+    }
+
+    .sub-title h4{
+        font-size: 12px;
+        font-weight: 300!important;
+    }
+
+   
+
+}
